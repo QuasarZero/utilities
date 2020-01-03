@@ -22,3 +22,18 @@
         }
     }
 
+    if(!function_exists('is_uuid')){
+        /**
+         * 是否是UUID
+         *
+         * @param $var
+         *
+         * @return bool
+         * @author Quasar
+         */
+        function is_uuid($var){
+            if(preg_match('/\w{8}(-\w{4}){3}-\w{12}/', $var)) return true;
+            else return false;
+        }
+    }
+
