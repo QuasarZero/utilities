@@ -24,7 +24,10 @@
   "autoload":          {
     "psr-4": {
       "Quasar\\Utility\\": "src"
-    }
+    },
+    "files": [
+      "src/Helper.php"
+    ]
   },
   "repositories":      {
     "packagist": {
