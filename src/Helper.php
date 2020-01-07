@@ -32,7 +32,7 @@
          * @author Quasar
          */
         function is_uuid($var){
-            if(preg_match('/\w{8}(-\w{4}){3}-\w{12}/', $var)) return true;
+            if(preg_match('/^\w{8}(-\w{4}){3}-\w{12}$/', $var)) return true;
             else return false;
         }
     }
